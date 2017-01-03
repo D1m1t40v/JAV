@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel\Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JenkinsDataFetcher", "JenkinsDataFetcher\JenkinsDataFetcher.csproj", "{B91CD930-2B7D-4CF2-ACFA-E138ABC27A3B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FCE24CCD-BCE2-4F17-87A9-C7E645C2EE7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataFetcherTest", "Tests\DataFetcherTest\DataFetcherTest.csproj", "{FB2B091C-FE5D-434F-AAC2-6599106CBF9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +31,15 @@ Global
 		{B91CD930-2B7D-4CF2-ACFA-E138ABC27A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B91CD930-2B7D-4CF2-ACFA-E138ABC27A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B91CD930-2B7D-4CF2-ACFA-E138ABC27A3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB2B091C-FE5D-434F-AAC2-6599106CBF9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB2B091C-FE5D-434F-AAC2-6599106CBF9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB2B091C-FE5D-434F-AAC2-6599106CBF9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB2B091C-FE5D-434F-AAC2-6599106CBF9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB2B091C-FE5D-434F-AAC2-6599106CBF9C} = {FCE24CCD-BCE2-4F17-87A9-C7E645C2EE7C}
 	EndGlobalSection
 EndGlobal

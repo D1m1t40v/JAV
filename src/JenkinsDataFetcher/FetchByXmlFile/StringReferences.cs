@@ -11,7 +11,7 @@ namespace JenkinsDataFetcher.FetchByXmlFile
         internal static Dictionary<string, Status> StringToStatus = new Dictionary<string, Status>
         {
             {"OK", Status.OK },
-            {"KO", Status.OK },
+            {"KO", Status.KO },
             {"Ignored", Status.Ignored }
         };
     }
