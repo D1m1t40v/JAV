@@ -2,21 +2,26 @@
 using DataModel;
 using System.IO;
 using System.Xml;
+using System.Reflection;
+using System;
 
-namespace JenkinsDataFetcher.FetchByFile
+namespace JenkinsDataFetcher.FetchByXmlFile
 {
-    public class XmlFileFetcher : IDataFetcher
+    internal class XmlFileFetcher : IDataFetcher
     {
         private string _filePath;
-        private IXmlFileParser _xmlParser;
+        private XmlFileParser _xmlParser;
 
-        public XmlFileFetcher(string filePath)
+        internal XmlFileFetcher(string filePath, XmlFileParser xmlParser)
         {
             _filePath = filePath;
+            _xmlParser = xmlParser;
         }
 
         public bool CanFetch()
         {
+            File.Create(".\\TEST.XML");
+            string toto = Environment.CurrentDirectory;
             return File.Exists(_filePath);
         }
 

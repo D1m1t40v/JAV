@@ -1,0 +1,6 @@
+<FileTest>
+  <Test name="TestA" result="KO" timeFailing="15"/>
+  <Test name="TestB" result="OK" timeFailing=""/>
+  <Test name="TestC" result="OK" timeFailing=""/>
+  <Test name="TestD" result="Ignored" timeFailing=""/>
+</FileTest>

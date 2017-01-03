@@ -40,10 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataFetcherFactory.cs" />
     <Compile Include="FetchByXmlFile\DefaultXmlParser.cs" />
+    <Compile Include="FetchByXmlFile\MultiLineXmlParser.cs" />
     <Compile Include="FetchByXmlFile\StringReferences.cs" />
     <Compile Include="FetchByXmlFile\XmlFileFetcher.cs" />
-    <Compile Include="FetchByXmlFile\IXmlFileParser.cs" />
+    <Compile Include="FetchByXmlFile\XmlFileParser.cs" />
     <Compile Include="IDataFetcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -4,6 +4,7 @@
     {
         public enum Status
         {
+            None,
             OK,
             KO,
             Ignored,
